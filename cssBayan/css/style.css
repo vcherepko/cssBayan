@@ -61,7 +61,7 @@ input:checked~.vc-bayan-element-name .vc-btn {
     rotate: 135deg;
 }
 label:hover:active .vc-bayan-element-name,
-input:hover:active~.vc-bayan-element-name .vc-btn,
+label:hover:active .vc-bayan-element-name .vc-btn, 
 label:hover:active img {
     transition: 1s;
     opacity: .5;
