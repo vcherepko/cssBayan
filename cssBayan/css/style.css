@@ -1,4 +1,5 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background: #eee;
     color: #333;
 }
@@ -57,31 +58,42 @@ input:hover~.vc-bayan-element-content {
 }
 
 @media (min-width: 320px) {
-
+    h1 {
+        font-size: 2rem; 
+    }
+    .vc-bayan-element-name {
+        font-size: .8rem;
+    }
     input:checked~.vc-bayan-element-content,
     input:hover~.vc-bayan-element-content {
         height: 20rem;
     }
     
 }
-
 @media (min-width: 820px) {
-
+    h1 {
+        font-size: 3rem; 
+    }
+    .vc-bayan-element-name {
+        font-size: 1.5rem;
+    }
     input:checked~.vc-bayan-element-content,
     input:hover~.vc-bayan-element-content {
         height: 25rem;
     }
 }
-
-@media (min-width: 1920px) {
-
+@media (min-width: 1920px) { 
+    h1 {
+        font-size: 4rem; 
+    }
+    .vc-bayan-element-name {
+        font-size: 2rem;
+    }
     input:checked~.vc-bayan-element-content,
     input:hover~.vc-bayan-element-content {
         height: 30rem;
     }
 }
-
-
 
 @media (hover: hover) { 
     label {
