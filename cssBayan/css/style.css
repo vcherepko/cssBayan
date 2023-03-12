@@ -41,21 +41,14 @@ label {
 input {
     display: none;
 }
-
 label span.vc-btn {
     display: block;
-    position: relative; 
     color: #333;
     transform: rotate(45deg);
     transition: .3s;  
     opacity: 0;
 }
 
-input:checked~.vc-bayan-element-content,
-input:hover~.vc-bayan-element-content {
-    opacity: 1;
-    padding-bottom: 1rem;
-}
 
 @media (min-width: 320px) {
     h1 {
@@ -66,7 +59,7 @@ input:hover~.vc-bayan-element-content {
     }
     input:checked~.vc-bayan-element-content,
     input:hover~.vc-bayan-element-content {
-        height: 20rem;
+        height: 10rem;
     }
     
 }
@@ -79,7 +72,7 @@ input:hover~.vc-bayan-element-content {
     }
     input:checked~.vc-bayan-element-content,
     input:hover~.vc-bayan-element-content {
-        height: 25rem;
+        height: 20rem;
     }
 }
 @media (min-width: 1920px) { 
@@ -95,7 +88,7 @@ input:hover~.vc-bayan-element-content {
     }
 }
 
-@media (hover: hover) { 
+@media (hover: hover) and (pointer: fine) {  
     label {
         cursor: pointer;
     }
@@ -104,13 +97,19 @@ input:hover~.vc-bayan-element-content {
     } 
     .vc-bayan-elements:hover .vc-btn {
         opacity: 1;
-    } 
-
+    }
+    input:checked~.vc-bayan-element-content,
+    input:hover~.vc-bayan-element-content {
+        opacity: 1;
+        padding-bottom: 1rem;
+    }
     input:checked~.vc-bayan-element-name .vc-btn,
     input:hover~.vc-bayan-element-name .vc-btn {
         rotate: 135deg;
     }
-
+    input:checked~.vc-bayan-element-name {
+        color: #333;
+    }
     label:hover:active .vc-bayan-element-name,
     input:hover:active~.vc-bayan-element-name .vc-btn,
     label:hover:active img {
