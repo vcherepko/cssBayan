@@ -60,6 +60,13 @@ input:checked~.vc-bayan-element-name {
 input:checked~.vc-bayan-element-name .vc-btn {
     rotate: 135deg;
 }
+label:hover:active .vc-bayan-element-name,
+input:hover:active~.vc-bayan-element-name .vc-btn,
+label:hover:active img {
+    transition: 1s;
+    opacity: .5;
+    color: blue;
+}
 
 @media (min-width: 320px) {
     h1 {
@@ -72,8 +79,8 @@ input:checked~.vc-bayan-element-name .vc-btn {
     input:hover~.vc-bayan-element-content {
         height: 10rem;
     }
-    
 }
+
 @media (min-width: 820px) {
     h1 {
         font-size: 3rem; 
@@ -99,6 +106,16 @@ input:checked~.vc-bayan-element-name .vc-btn {
     }
 }
 
+@media (max-width: 820px) { 
+    label .vc-bayan-element-name .vc-btn {
+        opacity: 1;
+        color: blue;
+    }
+    input:checked~.vc-bayan-element-name .vc-btn {
+        color: #333;
+    }
+}
+
 @media (hover: hover) and (pointer: fine) {  
     label {
         cursor: pointer;
@@ -111,14 +128,6 @@ input:checked~.vc-bayan-element-name .vc-btn {
     }
     input:hover~.vc-bayan-element-name .vc-btn {
         rotate: 135deg;
-    }
-
-    label:hover:active .vc-bayan-element-name,
-    input:hover:active~.vc-bayan-element-name .vc-btn,
-    label:hover:active img {
-        transition: 1s;
-        opacity: .5;
-        color: blue;
     }
 
 }
