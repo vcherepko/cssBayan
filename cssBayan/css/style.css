@@ -10,13 +10,14 @@ h1 {
 }
 .vc-bayan-wrapper {
     margin: 0 auto;
-    max-width: 80%;
+    width: 80%;
     font-weight: bold;
 }
 .vc-bayan-element-name {
     display: flex; 
     justify-content: space-between;
     padding: 1rem;
+    color: blue;
 }
 .vc-bayan-element-content {
     display: flex; 
@@ -43,8 +44,44 @@ input {
 label span.vc-btn {
     display: block;
     position: relative; 
-    width: 1rem;
-    height: 1rem;
+    color: #333;
     transform: rotate(45deg);
     transition: .3s;  
+    opacity: 0;
+}
+
+input:checked~.content,
+input:hover~.content {
+    opacity: 1;
+    padding-bottom: 1rem;
+    height: 30rem;
+}
+
+
+@media (hover: hover) { 
+    label {
+        cursor: pointer;
+    }
+    /* label:hover .vc-bayan-element-name {
+        color: #333;
+    }  */
+    .vc-bayan-elements:hover .vc-bayan-element-name {
+        color: #333;
+    } 
+    .vc-bayan-elements:hover .vc-btn {
+        opacity: 1;
+    } 
+
+    input:checked~.action .vc-btn,
+    input:hover~.action .vc-btn {
+        rotate: 135deg;
+    }
+
+    label:active .content img {
+        cursor: copy;
+        transition: 1s;
+        color: rgb(123, 0, 255); 
+        opacity: .5;
+    }
+
 }
